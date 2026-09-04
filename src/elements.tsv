@@ -1,120 +1,120 @@
 ID	TYPE	label	element	atomic number
-ID	TYPE		SC %
-CHEBI:49637	class	hydrogen atom	'ChEMROF:atomic_number' value 1
-CHEBI:30217	class	helium atom	'ChEMROF:atomic_number' value 2
-CHEBI:30145	class	lithium atom	'ChEMROF:atomic_number' value 3
-CHEBI:30501	class	beryllium atom	'ChEMROF:atomic_number' value 4
-CHEBI:27560	class	boron atom	'ChEMROF:atomic_number' value 5
-CHEBI:27594	class	carbon atom	'ChEMROF:atomic_number' value 6
-CHEBI:25555	class	nitrogen atom	'ChEMROF:atomic_number' value 7
-CHEBI:25805	class	oxygen atom	'ChEMROF:atomic_number' value 8
-CHEBI:24061	class	fluorine atom	'ChEMROF:atomic_number' value 9
-CHEBI:33310	class	neon atom	'ChEMROF:atomic_number' value 10
-CHEBI:26708	class	sodium atom	'ChEMROF:atomic_number' value 11
-CHEBI:25107	class	magnesium atom	'ChEMROF:atomic_number' value 12
-CHEBI:28984	class	aluminium atom	'ChEMROF:atomic_number' value 13
-CHEBI:27573	class	silicon atom	'ChEMROF:atomic_number' value 14
-CHEBI:28659	class	phosphorus atom	'ChEMROF:atomic_number' value 15
-CHEBI:26833	class	sulfur atom	'ChEMROF:atomic_number' value 16
-CHEBI:23116	class	chlorine atom	'ChEMROF:atomic_number' value 17
-CHEBI:49475	class	argon atom	'ChEMROF:atomic_number' value 18
-CHEBI:26216	class	potassium atom	'ChEMROF:atomic_number' value 19
-CHEBI:22984	class	calcium atom	'ChEMROF:atomic_number' value 20
-CHEBI:33330	class	scandium atom	'ChEMROF:atomic_number' value 21
-CHEBI:33341	class	titanium atom	'ChEMROF:atomic_number' value 22
-CHEBI:27698	class	vanadium atom	'ChEMROF:atomic_number' value 23
-CHEBI:28073	class	chromium atom	'ChEMROF:atomic_number' value 24
-CHEBI:18291	class	manganese atom	'ChEMROF:atomic_number' value 25
-CHEBI:18248	class	iron atom	'ChEMROF:atomic_number' value 26
-CHEBI:27638	class	cobalt atom	'ChEMROF:atomic_number' value 27
-CHEBI:28112	class	nickel atom	'ChEMROF:atomic_number' value 28
-CHEBI:28694	class	copper atom	'ChEMROF:atomic_number' value 29
-CHEBI:27363	class	zinc atom	'ChEMROF:atomic_number' value 30
-CHEBI:49631	class	gallium atom	'ChEMROF:atomic_number' value 31
-CHEBI:30441	class	germanium atom	'ChEMROF:atomic_number' value 32
-CHEBI:27563	class	arsenic atom	'ChEMROF:atomic_number' value 33
-CHEBI:27568	class	selenium atom	'ChEMROF:atomic_number' value 34
-CHEBI:22927	class	bromine atom	'ChEMROF:atomic_number' value 35
-CHEBI:49696	class	krypton atom	'ChEMROF:atomic_number' value 36
-CHEBI:33322	class	rubidium atom	'ChEMROF:atomic_number' value 37
-CHEBI:33324	class	strontium atom	'ChEMROF:atomic_number' value 38
-CHEBI:33331	class	yttrium atom	'ChEMROF:atomic_number' value 39
-CHEBI:33342	class	zirconium atom	'ChEMROF:atomic_number' value 40
-CHEBI:33344	class	niobium atom	'ChEMROF:atomic_number' value 41
-CHEBI:28685	class	molybdenum atom	'ChEMROF:atomic_number' value 42
-CHEBI:33353	class	technetium atom	'ChEMROF:atomic_number' value 43
-CHEBI:30682	class	ruthenium atom	'ChEMROF:atomic_number' value 44
-CHEBI:33359	class	rhodium atom	'ChEMROF:atomic_number' value 45
-CHEBI:33363	class	palladium	'ChEMROF:atomic_number' value 46
-CHEBI:30512	class	silver atom	'ChEMROF:atomic_number' value 47
-CHEBI:22977	class	cadmium atom	'ChEMROF:atomic_number' value 48
-CHEBI:30430	class	indium atom	'ChEMROF:atomic_number' value 49
-CHEBI:27007	class	tin atom	'ChEMROF:atomic_number' value 50
-CHEBI:30513	class	antimony atom	'ChEMROF:atomic_number' value 51
-CHEBI:30452	class	tellurium atom	'ChEMROF:atomic_number' value 52
-CHEBI:24859	class	iodine atom	'ChEMROF:atomic_number' value 53
-CHEBI:49957	class	xenon atom	'ChEMROF:atomic_number' value 54
-CHEBI:30514	class	caesium atom	'ChEMROF:atomic_number' value 55
-CHEBI:32594	class	barium atom	'ChEMROF:atomic_number' value 56
-CHEBI:33336	class	lanthanum atom	'ChEMROF:atomic_number' value 57
-CHEBI:33369	class	cerium	'ChEMROF:atomic_number' value 58
-CHEBI:49828	class	praseodymium atom	'ChEMROF:atomic_number' value 59
-CHEBI:33372	class	neodymium atom	'ChEMROF:atomic_number' value 60
-CHEBI:33373	class	promethium atom	'ChEMROF:atomic_number' value 61
-CHEBI:33374	class	samarium atom	'ChEMROF:atomic_number' value 62
-CHEBI:32999	class	europium atom	'ChEMROF:atomic_number' value 63
-CHEBI:33375	class	gadolinium atom	'ChEMROF:atomic_number' value 64
-CHEBI:33376	class	terbium atom	'ChEMROF:atomic_number' value 65
-CHEBI:33377	class	dysprosium atom	'ChEMROF:atomic_number' value 66
-CHEBI:49648	class	holmium atom	'ChEMROF:atomic_number' value 67
-CHEBI:33379	class	erbium	'ChEMROF:atomic_number' value 68
-CHEBI:33380	class	thulium atom	'ChEMROF:atomic_number' value 69
-CHEBI:33381	class	ytterbium	'ChEMROF:atomic_number' value 70
-CHEBI:33382	class	lutetium atom	'ChEMROF:atomic_number' value 71
-CHEBI:33343	class	hafnium atom	'ChEMROF:atomic_number' value 72
-CHEBI:33348	class	tantalum atom	'ChEMROF:atomic_number' value 73
-CHEBI:27998	class	tungsten	'ChEMROF:atomic_number' value 74
-CHEBI:49882	class	rhenium atom	'ChEMROF:atomic_number' value 75
-CHEBI:30687	class	osmium atom	'ChEMROF:atomic_number' value 76
-CHEBI:49666	class	iridium atom	'ChEMROF:atomic_number' value 77
-CHEBI:33364	class	platinum	'ChEMROF:atomic_number' value 78
-CHEBI:29287	class	gold atom	'ChEMROF:atomic_number' value 79
-CHEBI:25195	class	mercury atom	'ChEMROF:atomic_number' value 80
-CHEBI:30440	class	thallium atom	'ChEMROF:atomic_number' value 81
-CHEBI:25016	class	lead atom	'ChEMROF:atomic_number' value 82
-CHEBI:33301	class	bismuth atom	'ChEMROF:atomic_number' value 83
-CHEBI:33313	class	polonium atom	'ChEMROF:atomic_number' value 84
-CHEBI:30415	class	astatine atom	'ChEMROF:atomic_number' value 85
-CHEBI:33314	class	radon atom	'ChEMROF:atomic_number' value 86
-CHEBI:33323	class	francium atom	'ChEMROF:atomic_number' value 87
-CHEBI:33325	class	radium atom	'ChEMROF:atomic_number' value 88
-CHEBI:33337	class	actinium atom	'ChEMROF:atomic_number' value 89
-CHEBI:33385	class	thorium	'ChEMROF:atomic_number' value 90
-CHEBI:33386	class	protactinium atom	'ChEMROF:atomic_number' value 91
-CHEBI:27214	class	uranium atom	'ChEMROF:atomic_number' value 92
-CHEBI:33387	class	neptunium atom	'ChEMROF:atomic_number' value 93
-CHEBI:33388	class	plutonium atom	'ChEMROF:atomic_number' value 94
-CHEBI:33389	class	americium atom	'ChEMROF:atomic_number' value 95
-CHEBI:33390	class	curium atom	'ChEMROF:atomic_number' value 96
-CHEBI:33391	class	berkelium atom	'ChEMROF:atomic_number' value 97
-CHEBI:33392	class	californium atom	'ChEMROF:atomic_number' value 98
-CHEBI:33393	class	einsteinium atom	'ChEMROF:atomic_number' value 99
-CHEBI:33394	class	fermium	'ChEMROF:atomic_number' value 100
-CHEBI:33395	class	mendelevium atom	'ChEMROF:atomic_number' value 101
-CHEBI:33396	class	nobelium	'ChEMROF:atomic_number' value 102
-CHEBI:33397	class	lawrencium atom	'ChEMROF:atomic_number' value 103
-CHEBI:33346	class	rutherfordium atom	'ChEMROF:atomic_number' value 104
-CHEBI:33349	class	dubnium atom	'ChEMROF:atomic_number' value 105
-CHEBI:33351	class	seaborgium atom	'ChEMROF:atomic_number' value 106
-CHEBI:33355	class	bohrium atom	'ChEMROF:atomic_number' value 107
-CHEBI:33357	class	hassium atom	'ChEMROF:atomic_number' value 108
-CHEBI:33361	class	meitnerium atom	'ChEMROF:atomic_number' value 109
-CHEBI:33367	class	darmstadtium	'ChEMROF:atomic_number' value 110
-CHEBI:33368	class	roentgenium atom	'ChEMROF:atomic_number' value 111
-CHEBI:33517	class	copernicium atom	'ChEMROF:atomic_number' value 112
-CHEBI:194533	class	nihonium atom	'ChEMROF:atomic_number' value 113
-CHEBI:194531	class	flerovium atom	'ChEMROF:atomic_number' value 114
-CHEBI:194535	class	moscovium atom	'ChEMROF:atomic_number' value 115
-CHEBI:194537	class	livermorium atom	'ChEMROF:atomic_number' value 116
-CHEBI:194539	class	tennessine atom	'ChEMROF:atomic_number' value 117
-CHEBI:194541	class	oganesson atom	'ChEMROF:atomic_number' value 118
+ID	TYPE		SC 'ChEMROF:atomic_number' value %
+CHEBI:49637	class	hydrogen atom	1
+CHEBI:30217	class	helium atom	2
+CHEBI:30145	class	lithium atom	3
+CHEBI:30501	class	beryllium atom	4
+CHEBI:27560	class	boron atom	5
+CHEBI:27594	class	carbon atom	6
+CHEBI:25555	class	nitrogen atom	7
+CHEBI:25805	class	oxygen atom	8
+CHEBI:24061	class	fluorine atom	9
+CHEBI:33310	class	neon atom	10
+CHEBI:26708	class	sodium atom	11
+CHEBI:25107	class	magnesium atom	12
+CHEBI:28984	class	aluminium atom	13
+CHEBI:27573	class	silicon atom	14
+CHEBI:28659	class	phosphorus atom	15
+CHEBI:26833	class	sulfur atom	16
+CHEBI:23116	class	chlorine atom	17
+CHEBI:49475	class	argon atom	18
+CHEBI:26216	class	potassium atom	19
+CHEBI:22984	class	calcium atom	20
+CHEBI:33330	class	scandium atom	21
+CHEBI:33341	class	titanium atom	22
+CHEBI:27698	class	vanadium atom	23
+CHEBI:28073	class	chromium atom	24
+CHEBI:18291	class	manganese atom	25
+CHEBI:18248	class	iron atom	26
+CHEBI:27638	class	cobalt atom	27
+CHEBI:28112	class	nickel atom	28
+CHEBI:28694	class	copper atom	29
+CHEBI:27363	class	zinc atom	30
+CHEBI:49631	class	gallium atom	31
+CHEBI:30441	class	germanium atom	32
+CHEBI:27563	class	arsenic atom	33
+CHEBI:27568	class	selenium atom	34
+CHEBI:22927	class	bromine atom	35
+CHEBI:49696	class	krypton atom	36
+CHEBI:33322	class	rubidium atom	37
+CHEBI:33324	class	strontium atom	38
+CHEBI:33331	class	yttrium atom	39
+CHEBI:33342	class	zirconium atom	40
+CHEBI:33344	class	niobium atom	41
+CHEBI:28685	class	molybdenum atom	42
+CHEBI:33353	class	technetium atom	43
+CHEBI:30682	class	ruthenium atom	44
+CHEBI:33359	class	rhodium atom	45
+CHEBI:33363	class	palladium	46
+CHEBI:30512	class	silver atom	47
+CHEBI:22977	class	cadmium atom	48
+CHEBI:30430	class	indium atom	49
+CHEBI:27007	class	tin atom	50
+CHEBI:30513	class	antimony atom	51
+CHEBI:30452	class	tellurium atom	52
+CHEBI:24859	class	iodine atom	53
+CHEBI:49957	class	xenon atom	54
+CHEBI:30514	class	caesium atom	55
+CHEBI:32594	class	barium atom	56
+CHEBI:33336	class	lanthanum atom	57
+CHEBI:33369	class	cerium	58
+CHEBI:49828	class	praseodymium atom	59
+CHEBI:33372	class	neodymium atom	60
+CHEBI:33373	class	promethium atom	61
+CHEBI:33374	class	samarium atom	62
+CHEBI:32999	class	europium atom	63
+CHEBI:33375	class	gadolinium atom	64
+CHEBI:33376	class	terbium atom	65
+CHEBI:33377	class	dysprosium atom	66
+CHEBI:49648	class	holmium atom	67
+CHEBI:33379	class	erbium	68
+CHEBI:33380	class	thulium atom	69
+CHEBI:33381	class	ytterbium	70
+CHEBI:33382	class	lutetium atom	71
+CHEBI:33343	class	hafnium atom	72
+CHEBI:33348	class	tantalum atom	73
+CHEBI:27998	class	tungsten	74
+CHEBI:49882	class	rhenium atom	75
+CHEBI:30687	class	osmium atom	76
+CHEBI:49666	class	iridium atom	77
+CHEBI:33364	class	platinum	78
+CHEBI:29287	class	gold atom	79
+CHEBI:25195	class	mercury atom	80
+CHEBI:30440	class	thallium atom	81
+CHEBI:25016	class	lead atom	82
+CHEBI:33301	class	bismuth atom	83
+CHEBI:33313	class	polonium atom	84
+CHEBI:30415	class	astatine atom	85
+CHEBI:33314	class	radon atom	86
+CHEBI:33323	class	francium atom	87
+CHEBI:33325	class	radium atom	88
+CHEBI:33337	class	actinium atom	89
+CHEBI:33385	class	thorium	90
+CHEBI:33386	class	protactinium atom	91
+CHEBI:27214	class	uranium atom	92
+CHEBI:33387	class	neptunium atom	93
+CHEBI:33388	class	plutonium atom	94
+CHEBI:33389	class	americium atom	95
+CHEBI:33390	class	curium atom	96
+CHEBI:33391	class	berkelium atom	97
+CHEBI:33392	class	californium atom	98
+CHEBI:33393	class	einsteinium atom	99
+CHEBI:33394	class	fermium	100
+CHEBI:33395	class	mendelevium atom	101
+CHEBI:33396	class	nobelium	102
+CHEBI:33397	class	lawrencium atom	103
+CHEBI:33346	class	rutherfordium atom	104
+CHEBI:33349	class	dubnium atom	105
+CHEBI:33351	class	seaborgium atom	106
+CHEBI:33355	class	bohrium atom	107
+CHEBI:33357	class	hassium atom	108
+CHEBI:33361	class	meitnerium atom	109
+CHEBI:33367	class	darmstadtium	110
+CHEBI:33368	class	roentgenium atom	111
+CHEBI:33517	class	copernicium atom	112
+CHEBI:194533	class	nihonium atom	113
+CHEBI:194531	class	flerovium atom	114
+CHEBI:194535	class	moscovium atom	115
+CHEBI:194537	class	livermorium atom	116
+CHEBI:194539	class	tennessine atom	117
+CHEBI:194541	class	oganesson atom	118
