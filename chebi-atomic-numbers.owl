@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl#"
-     xml:base="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl"
+<rdf:RDF xmlns="https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl#"
+     xml:base="https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,12 +8,12 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl">
+    <owl:Ontology rdf:about="https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl">
         <dcterms:creator rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <dcterms:description>An ontology that does axiom injection to ChEBI terms representing atoms by adding a data property to their atomic number.</dcterms:description>
         <dcterms:license rdf:resource="https://spdx.org/licenses/CC0-1.0"/>
-        <dcterms:title>ChEBI Element Extension Ontology</dcterms:title>
-        <doap:Repository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/cthoyt/chebi-element-extension-ontology</doap:Repository>
+        <dcterms:title>ChEBI Atomic Numbers Ontology</dcterms:title>
+        <doap:Repository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/cthoyt/chebi-atomic-numbers-ontology</doap:Repository>
     </owl:Ontology>
     
 

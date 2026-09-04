@@ -1,8 +1,12 @@
-# ChEBI Element Extension Ontology
+# ChEBI Atomic Numbers Ontology
 
 This repository contains an ontology component that injects axioms for the
 atomic numbers for the atoms in ChEBI's
 [atom (CHEBI:33250)](https://www.ebi.ac.uk/chebi/CHEBI:33250) hierarchy.
+
+The resulting ontology artifact is available from
+[https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl](https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl)
+(PURL coming soon).
 
 ## How does this work?
 

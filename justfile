@@ -11,4 +11,4 @@ convert:
     robot merge \
       --input src/metadata.ofn \
       --input src/tmp.owl \
-      --output elements.owl
+      --output chebi-atomic-numbers.owl
