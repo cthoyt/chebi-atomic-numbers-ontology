@@ -4,61 +4,68 @@ This repository contains an ontology component that injects axioms for the
 atomic numbers for the atoms in ChEBI's
 [atom (CHEBI:33250)](https://www.ebi.ac.uk/chebi/CHEBI:33250) hierarchy.
 
-It uses the
-[Chemical Entity Materials and Reactions Ontological Framework (CHEMROF)](https://semantic.farm/registry/chemrof)
-to assign a reusable data property -
-[`ChEMROF:atomic_number`](https://chemkg.github.io/chemrof/atomic_number/).
+## How does this work?
 
-The results are available as a ROBOT template TSV (which can be used as a
-regular TSV) and an OWL file. Rebuild with:
+The primary manually curated artifact in this repository is
+[src/elements.tsv](src/elements.tsv), a tab-separated values (TSV) file that
+contains templating information in its header that directs
+[ROBOT](https://robot.obolibrary.org) how to convert it into an ontology file.
 
-```console
-$ just convert
-```
+The first few lines look like this:
 
-### How does the template work?
+|             |       |               |                                    |
+| ----------- | ----- | ------------- | ---------------------------------- |
+| ID          | type  | label         | atomic number                      |
+| ID          | TYPE  |               | SC 'ChEMROF:atomic_number' value % |
+| CHEBI:49637 | class | hydrogen atom | 1                                  |
 
-[ROBOT is an OBO Tool (ROBOT)](https://robot.obolibrary.org/)
+Note that there are two header rows: the first contains labels and the second
+contains ROBOT commands. Here's what each means:
 
-The primary curated artifact in this repository is
-[src/elements.tsv](src/elements.tsv), which is a tab-separated values file that
-can be used with [`robot template`](https://robot.obolibrary.org/template.html).
-
-The secret is that there are two header rows. The first is purely for human
-readability. The second give ROBOT commands.
-
-1. `ID` says that this is the CURIE for the entity that we're annotating
+1. The `ID` command says that this column contains the CURIE for the entity
+   we're annotating. We write `ID` in both the human label and the ROBOT command
+   here to reduce confusion.
 2. `TYPE` says what kind of entity it is and how it should get declared. Either
    an informal abbreviation `class` or fully qualified CURIE `owl:Class` can be
-   used
+   used in this column
 3. `label` having a label column is important to make this file readable, but I
    actually didn't want to add label axioms this way. The issue is this TSV
    could get out of sync with the upstream, especially because I suggested
    several of the relevant classes get their names improved in
    https://github.com/ebi-chebi/ChEBI/issues/4958 while I was working on this.
    As an alternative, these can be slurped from the current OWL file and merged
-   (future work)
+   (future work). If I wanted to include this, I would add
+   `AT rdfs:label^^xsd:string`.
 4. `atomic number` this is the coolest part of what's going on in this file.
    `SC 'ChEMROF:atomic_number' value %` has four parts:
    1. `SC` means that this is going to be a subclass expression
    2. [`ChEMROF:atomic_number`](https://chemkg.github.io/chemrof/atomic_number/)
-      is the predicate in the expression. Quotes around the CURIE are required!
+      is the data property from the
+      [Chemical Entity Materials and Reactions Ontological Framework (CHEMROF)](https://semantic.farm/registry/chemrof)
+      used in the expression. Quotes around the CURIE are required!
    3. `value` signals it's going to be a literal
    4. `%` is the placeholder for the value in each row
-
-|             |       |               |                                    |
-| ----------- | ----- | ------------- | ---------------------------------- |
-| ID          | TYPE  | label         | atomic number                      |
-| ID          | TYPE  |               | SC 'ChEMROF:atomic_number' value % |
-| CHEBI:49637 | class | hydrogen atom | 1                                  |
-
-Importantly, when running the `robot template` command, all the prefixes used
-(which is just `CHEBI` and `ChEMROF`) need to get qualified. That is taken care
-of in the [`justfile`](justfile), which is used to actually run ROBOT.
 
 Because of the flexibility of the ROBOT templating language, this TSV can
 effectively be used as a normal TSV, e.g., to programmatically get the mapping
 from ChEBI identifiers to atomic numbers without going through OWL software.
+
+## How to make the ontology export
+
+The usage of [`robot template`](https://robot.obolibrary.org/template.html) is
+encoded in this repository's [`justfile`](justfile). This does the following:
+
+1. Qualifies all prefixes used (CHEBI and ChEMROF)
+2. Merges in metadata from a different ontology file
+   [`src/metadata.ofn`](src/metadata.ofn)
+3. Adds declaration information for the data property that doesn't appear in
+   `entities.tsv`
+
+These can all be re-run with:
+
+```console
+$ just convert
+```
 
 ## License
 
