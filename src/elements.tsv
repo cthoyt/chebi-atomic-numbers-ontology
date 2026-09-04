@@ -1,4 +1,4 @@
-ID	TYPE	label	element	atomic number
+ID	TYPE	label	atomic number
 ID	TYPE		SC 'ChEMROF:atomic_number' value %
 CHEBI:49637	class	hydrogen atom	1
 CHEBI:30217	class	helium atom	2
