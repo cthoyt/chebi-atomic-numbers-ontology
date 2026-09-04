@@ -50,6 +50,15 @@ contains ROBOT commands. Here's what each means:
    3. `value` signals it's going to be a literal
    4. `%` is the placeholder for the value in each row
 
+The results are OWL that look like this (shown in OFN for brevity):
+
+```
+SubClassOf(CHEBI:49637 DataHasValue(ChEMROF:atomic_number> "1"^^xsd:integer))
+...
+SubClassOf(CHEBI:18248 DataHasValue(ChEMROF:atomic_number> "26"^^xsd:integer))
+...
+```
+
 Because of the flexibility of the ROBOT templating language, this TSV can
 effectively be used as a normal TSV, e.g., to programmatically get the mapping
 from ChEBI identifiers to atomic numbers without going through OWL software.
