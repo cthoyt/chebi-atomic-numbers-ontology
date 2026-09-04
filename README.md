@@ -1,5 +1,7 @@
 # ChEBI Atomic Numbers Ontology
 
+[![DOI](https://zenodo.org/badge/1357107774.svg)](https://doi.org/10.5281/zenodo.22306043)
+
 This repository contains an ontology component that injects axioms for the
 atomic numbers for the atoms in ChEBI's
 [atom (CHEBI:33250)](https://www.ebi.ac.uk/chebi/CHEBI:33250) hierarchy.
@@ -15,13 +17,16 @@ The primary manually curated artifact in this repository is
 contains templating information in its header that directs
 [ROBOT](https://robot.obolibrary.org) how to convert it into an ontology file.
 
-The first few lines look like this:
+The file looks like this:
 
-|             |       |               |                                    |
-| ----------- | ----- | ------------- | ---------------------------------- |
-| ID          | type  | label         | atomic number                      |
-| ID          | TYPE  |               | SC 'ChEMROF:atomic_number' value % |
-| CHEBI:49637 | class | hydrogen atom | 1                                  |
+| ID                                                 | type  | label           |                                                                     atomic number |
+| -------------------------------------------------- | ----- | --------------- | --------------------------------------------------------------------------------: |
+| ID                                                 | TYPE  |                 | SC '[ChEMROF:atomic_number](https://semantic.farm/ChEMROF:atomic_number)' value % |
+| [CHEBI:49637](https://semantic.farm/CHEBI:49637)   | class | hydrogen atom   |                                                                                 1 |
+| [CHEBI:30217](https://semantic.farm/CHEBI:30217)   | class | helium atom     |                                                                                 2 |
+| ...                                                | ...   | ...             |                                                                               ... |
+| [CHEBI:194539](https://semantic.farm/CHEBI:194539) | class | tennessine atom |                                                                               117 |
+| [CHEBI:194541](https://semantic.farm/CHEBI:194541) | class | oganesson atom  |                                                                               118 |
 
 Note that there are two header rows: the first contains labels and the second
 contains ROBOT commands. Here's what each means:
@@ -50,15 +55,6 @@ contains ROBOT commands. Here's what each means:
    3. `value` signals it's going to be a literal
    4. `%` is the placeholder for the value in each row
 
-The results are OWL that look like this (shown in OFN for brevity):
-
-```
-SubClassOf(CHEBI:49637 DataHasValue(ChEMROF:atomic_number "1"^^xsd:integer))
-...
-SubClassOf(CHEBI:18248 DataHasValue(ChEMROF:atomic_number "26"^^xsd:integer))
-...
-```
-
 Because of the flexibility of the ROBOT templating language, this TSV can
 effectively be used as a normal TSV, e.g., to programmatically get the mapping
 from ChEBI identifiers to atomic numbers without going through OWL software.
@@ -66,18 +62,29 @@ from ChEBI identifiers to atomic numbers without going through OWL software.
 ## How to make the ontology export
 
 The usage of [`robot template`](https://robot.obolibrary.org/template.html) is
-encoded in this repository's [`justfile`](justfile). This does the following:
+encoded in this repository's [ `justfile`](justfile). This does the following:
 
 1. Qualifies all prefixes used (CHEBI and ChEMROF)
 2. Merges in metadata from a different ontology file
    [`src/metadata.ofn`](src/metadata.ofn)
-3. Adds declaration information for the data property that doesn't appear in
+3. Adds declaration information for the data property from
+   [`src/properties.tsv`](src/properties.tsv) that doesn't appear in
    `entities.tsv`
 
 These can all be re-run with:
 
 ```console
 $ just convert
+```
+
+The results are OWL that look like this (shown in OFN for brevity):
+
+```
+SubClassOf(CHEBI:49637 DataHasValue(ChEMROF:atomic_number "1"^^xsd:integer))
+SubClassOf(CHEBI:30217 DataHasValue(ChEMROF:atomic_number "2"^^xsd:integer))
+...
+SubClassOf(CHEBI:194539 DataHasValue(ChEMROF:atomic_number "117"^^xsd:integer))
+SubClassOf(CHEBI:194541 DataHasValue(ChEMROF:atomic_number "118"^^xsd:integer))
 ```
 
 ## License
