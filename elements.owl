@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF xmlns="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl#"
+     xml:base="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology/>
+    <owl:Ontology rdf:about="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl"/>
     
 
 
@@ -23,10 +23,10 @@
 
     <!-- https://chemkg.github.io/chemrof/atomic_number -->
 
-    <DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/atomic_number">
+    <owl:DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/atomic_number">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label>atomic number</rdfs:label>
-    </DatatypeProperty>
+    </owl:DatatypeProperty>
     
 
 
@@ -43,1535 +43,1535 @@
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_18248 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18248">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18248">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_18291 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18291">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18291">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194531 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194531">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194531">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194533 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194533">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194533">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194535 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194535">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194535">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194537 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194537">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194537">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194539 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194539">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194539">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_194541 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194541">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_194541">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_22927 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22927">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22927">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_22977 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22977">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22977">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_22984 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22984">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22984">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_23116 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23116">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23116">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24061 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24061">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24061">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24859 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24859">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24859">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_25016 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25016">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_25107 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25107">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25107">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_25195 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25195">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25195">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_25555 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25555">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25555">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_26216 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26216">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26216">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_26708 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26708">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26708">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_26833 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26833">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26833">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27007 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27007">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27214 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27214">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27214">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27363 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27363">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27363">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27560 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27560">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27560">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27563 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27563">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27563">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27568 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27568">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27568">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27573 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27573">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27573">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27594 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27638 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27638">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27638">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27698 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27698">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27698">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27998 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27998">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27998">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28073 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28073">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28073">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28112 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28659 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28659">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28659">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28685 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28685">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28685">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28694 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28694">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28694">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_28984 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28984">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28984">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_29287 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29287">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29287">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30145 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30145">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30145">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30217 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30217">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30217">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30415 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30415">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30415">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30430 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30430">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30430">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30440 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30440">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30440">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30441 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30441">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30441">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30452 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30452">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30452">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30501 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30501">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30501">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30512 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30512">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30512">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30513 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30513">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30513">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30514 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30514">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30514">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30682 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30682">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30682">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_30687 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30687">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30687">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_32594 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32594">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32594">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_32999 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32999">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32999">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33301 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33301">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33301">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33310 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33310">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33310">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33313 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33313">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33313">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33314 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33314">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33314">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33322 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33322">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33322">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33323 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33323">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33323">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33324 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33324">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33324">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33325 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33325">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33325">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33330 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33330">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33330">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33331 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33331">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33331">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33336 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33336">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33336">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33337 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33337">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33337">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33341 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33341">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33341">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33342 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33342">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33342">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33343 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33343">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33343">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33344 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33344">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33344">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33346 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33346">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33346">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33348 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33348">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33348">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33349 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33349">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33349">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33351 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33351">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33351">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33353 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33353">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33353">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33355 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33355">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33355">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">107</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">107</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33357 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33357">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33357">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33359 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33359">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33359">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33361 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33361">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33361">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33363 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33363">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33363">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33364 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33364">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33364">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33367 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33367">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33367">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33368 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33368">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33368">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33369 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33369">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33369">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33372 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33372">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33372">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33373 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33373">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33373">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33374 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33374">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33374">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33376 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33376">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33376">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33377 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33377">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33377">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33379 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33379">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33379">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33380 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33380">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33380">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33381 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33381">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33381">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33382 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33382">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33382">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33385 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33385">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33385">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33386 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33386">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33386">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33387 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33387">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33387">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33388 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33388">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33388">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33389 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33389">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33389">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33390 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33390">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33390">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33391 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33391">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33391">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33392 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33392">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33392">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33393 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33393">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33393">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33394 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33394">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33394">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33395 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33395">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33395">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33396 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33396">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33396">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33397 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33397">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33397">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_33517 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33517">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33517">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49475 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49475">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49475">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49631 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49631">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49631">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49637 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49637">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49637">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49648 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49648">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49648">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49666 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49666">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49666">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49696 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49696">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49696">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49828 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49828">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49828">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49882 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49882">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49882">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_49957 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49957">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49957">
         <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
-                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</hasValue>
-            </Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/atomic_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
-    </Class>
+    </owl:Class>
 </rdf:RDF>
 
 
