@@ -5,8 +5,57 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl"/>
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://github.com/cthoyt/chebi-element-extension-ontology/raw/refs/heads/main/elements.owl">
+        <dcterms:creator rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <dcterms:description>An ontology that does axiom injection to ChEBI terms representing atoms by adding a data property to their atomic number.</dcterms:description>
+        <dcterms:license rdf:resource="https://spdx.org/licenses/CC0-1.0"/>
+        <dcterms:title>ChEBI Element Extension Ontology</dcterms:title>
+        <doap:Repository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/cthoyt/chebi-element-extension-ontology</doap:Repository>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#Repository -->
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#Repository"/>
     
 
 
@@ -38,6 +87,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/NCBITaxon_9606">
+        <rdfs:label>human</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1572,6 +1629,34 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- https://spdx.org/licenses/CC0-1.0 -->
+
+    <owl:Class rdf:about="https://spdx.org/licenses/CC0-1.0">
+        <rdfs:label>CC0 1.0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://orcid.org/0000-0003-4423-4370 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0003-4423-4370">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/NCBITaxon_9606"/>
+        <rdfs:label>Charles Tapley Hoyt</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
