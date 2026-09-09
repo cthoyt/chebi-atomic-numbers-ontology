@@ -202,10 +202,40 @@
     
 
 
+    <!-- https://w3id.org/chemrof/alternate_form_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/chemrof/alternate_form_of">
+        <rdfs:label>alternate form of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/chemrof/isobar_of -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/chemrof/isobar_of">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/chemrof/alternate_form_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:label>isobar of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/chemrof/isotone_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/chemrof/isotone_of">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/chemrof/alternate_form_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>isotone of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/chemrof/isotope_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/chemrof/isotope_of">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/chemrof/alternate_form_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>isotope of</rdfs:label>
     </owl:ObjectProperty>
     
 
