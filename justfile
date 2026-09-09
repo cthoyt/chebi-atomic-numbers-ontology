@@ -33,5 +33,4 @@ convert: extract
       query \
       --prefixes src/prefixes.json \
       --update src/isobar-construct.ru \
-      --output chebi-atomic-numbers.ttl \
       --output chebi-atomic-numbers.owl
