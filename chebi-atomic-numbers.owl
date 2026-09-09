@@ -207,8 +207,38 @@
     <!-- https://chemkg.github.io/chemrof/atomic_number -->
 
     <owl:DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/atomic_number">
+        <rdfs:subPropertyOf rdf:resource="https://chemkg.github.io/chemrof/subatomic_particle_count"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label>atomic number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://chemkg.github.io/chemrof/neutron_number -->
+
+    <owl:DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/neutron_number">
+        <rdfs:subPropertyOf rdf:resource="https://chemkg.github.io/chemrof/subatomic_particle_count"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>neutron number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://chemkg.github.io/chemrof/nucleon_number -->
+
+    <owl:DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/nucleon_number">
+        <rdfs:subPropertyOf rdf:resource="https://chemkg.github.io/chemrof/subatomic_particle_count"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>nucleon number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://chemkg.github.io/chemrof/subatomic_particle_count -->
+
+    <owl:DatatypeProperty rdf:about="https://chemkg.github.io/chemrof/subatomic_particle_count">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>subatomic particle</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -270,6 +300,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_155827">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A trace radioisotope of argon with atomic mass of 38.964313 and a half-life of 269 years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:25729-41-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:16429279</oboInOwl:hasDbXref>
@@ -298,6 +340,18 @@
         <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.96431</chemrof:monoisotopic_mass>
         <chemrof:smiles_string>[39Ar]</chemrof:smiles_string>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:28017500</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:28755564</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -376,18 +430,6 @@
         <owl:annotatedTarget>pubmed:17791262</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:28017500</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:28755564</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -395,6 +437,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176566">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22984"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A minor stable isotope of calcium with relative atomic mass 42.95877 and 0.135 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14333-06-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:11859764</oboInOwl:hasDbXref>
@@ -557,6 +611,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28685"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of molybdenum with relative atomic mass 97.90541, 24.29 atom percent natural abundance and nuclear spin 0.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14392-20-2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:19720541</oboInOwl:hasDbXref>
@@ -698,6 +764,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176571">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A major stable isotope of strontium with relative atomic mass 87.90561 and 82.58 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14119-10-9</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:11893161</oboInOwl:hasDbXref>
@@ -832,6 +910,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176572">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of rubidium with relative atomic mass 84.91179, 72.17 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13982-12-2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:18026483</oboInOwl:hasDbXref>
@@ -973,6 +1063,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176573">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of selenium with relative atomic mass 81.91670, 8.82 atom percent natural abundance and nuclear spin 0.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14687-58-2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>chemspider:4892236</oboInOwl:hasDbXref>
@@ -1005,56 +1107,6 @@
         <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81.9167</chemrof:monoisotopic_mass>
         <chemrof:smiles_string>[82Se]</chemrof:smiles_string>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:33576665</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>((82)Se)selenium</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>((82)Se)selenium</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>iupac</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>(82)34Se</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>(82)Se</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>Se-82</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>selenium, isotope of mass 82</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>selenium-82</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1121,6 +1173,56 @@
         <owl:annotatedTarget>pubmed:31951429</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:33576665</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>((82)Se)selenium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>((82)Se)selenium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>iupac</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>(82)34Se</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>(82)Se</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Se-82</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>selenium, isotope of mass 82</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>selenium-82</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>chemidplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1128,6 +1230,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176574">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of zinc with relative atomic mass 65.92603, 27.7 atom percent natural abundance and nuclear spin 0.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14378-33-7</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:12447866</oboInOwl:hasDbXref>
@@ -1269,6 +1383,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176575">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of nickel with relative atomic mass 59.93079, 26.223 atom percent natural abundance and nuclear spin 0.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13981-80-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:15308160</oboInOwl:hasDbXref>
@@ -1389,6 +1515,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176578">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of cobalt with relative atomic mass 58.93319, 100 atom percent natural abundance and nuclear spin 7/2.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>pubmed:10617436</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:10940985</oboInOwl:hasDbXref>
@@ -1572,6 +1710,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176583">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of manganese with relative atomic mass 54.93804, 100 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>pubmed:20645339</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:21058720</oboInOwl:hasDbXref>
@@ -1685,6 +1835,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176584">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27563"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of arsenic with relative atomic mass 74.921596, 100 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>((75)As)arsenic</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -2732,6 +2894,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_196958">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30514"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:15726-30-4</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:11508464</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:16340067</oboInOwl:hasDbXref>
@@ -2907,6 +3081,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_196959">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30514"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">137</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:10045-97-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:33631506</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:34328919</oboInOwl:hasDbXref>
@@ -8085,6 +8271,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30218">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30217"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of helium with relative atomic mass 3.016029. The least abundant (0.000137 atom percent) isotope of naturally occurring helium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14762-55-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:14208</oboInOwl:hasDbXref>
@@ -8169,6 +8367,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30219">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30217"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of helium with relative atomic mass 4.002603. The most abundant (99.99 atom percent) isotope of naturally occurring helium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>gmelin:14207</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>helium-4</oboInOwl:hasExactSynonym>
@@ -8366,31 +8576,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>cas:7440-74-6</owl:annotatedTarget>
-        <oboInOwl:source>cas</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>gmelin:16297</owl:annotatedTarget>
-        <oboInOwl:source>gmelin</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>webelements:In</owl:annotatedTarget>
-        <oboInOwl:source>webelements</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>indium</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>49In</owl:annotatedTarget>
         <oboInOwl:hasDbXref>iupac</oboInOwl:hasDbXref>
@@ -8424,6 +8609,31 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>indium</owl:annotatedTarget>
         <oboInOwl:hasDbXref>iupac</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:7440-74-6</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:16297</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>webelements:In</owl:annotatedTarget>
+        <oboInOwl:source>webelements</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>indium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
     </owl:Axiom>
     
@@ -8639,6 +8849,31 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:13494-80-9</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:16309</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>webelements:Te</owl:annotatedTarget>
+        <oboInOwl:source>webelements</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>tellurium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>52Te</owl:annotatedTarget>
         <oboInOwl:hasDbXref>iupac</oboInOwl:hasDbXref>
@@ -8679,31 +8914,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>teluro</owl:annotatedTarget>
         <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>cas:13494-80-9</owl:annotatedTarget>
-        <oboInOwl:source>cas</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>gmelin:16309</owl:annotatedTarget>
-        <oboInOwl:source>gmelin</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>webelements:Te</owl:annotatedTarget>
-        <oboInOwl:source>webelements</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>tellurium</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi/IUPAC_NAME"/>
     </owl:Axiom>
     
 
@@ -13656,6 +13866,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33371">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14133-76-7</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41657</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>technetium-99</oboInOwl:hasExactSynonym>
@@ -15849,6 +16071,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33491">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">220</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:22481-48-7</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:297037</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>radon-220</oboInOwl:hasExactSynonym>
@@ -15939,6 +16173,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33492">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">222</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14859-67-7</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>radon-222</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -16008,6 +16254,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33493">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">133</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">219</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14835-02-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:297039</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>radon-219</oboInOwl:hasExactSynonym>
@@ -16372,6 +16630,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33815">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of oxygen with relative atomic mass 17.999160 and 0.205 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14797-71-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:17562</oboInOwl:hasDbXref>
@@ -16463,6 +16733,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33818">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of oxygen with relative atomic mass 15.994914. The most abundant (99.76 atom percent) isotope of naturally occurring oxygen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>gmelin:17560</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>oxygen-16</oboInOwl:hasExactSynonym>
@@ -16526,6 +16808,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33819">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of oxygen with relative atomic mass 16.999131. The least abundant (0.038 atom percent) isotope of naturally occurring oxygen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13968-48-4</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:17561</oboInOwl:hasDbXref>
@@ -16603,6 +16897,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36927">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14762-75-5</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>wikipedia.en:Carbon-14</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>carbon-14</oboInOwl:hasExactSynonym>
@@ -16679,6 +16985,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36928">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14762-74-4</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>carbon-13</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -16755,6 +17073,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36929">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14333-33-6</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>carbon-11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -16824,6 +17154,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:15578-68-4</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>carbon-10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -16893,6 +17235,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>carbon-12</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(12)6C</oboInOwl:hasRelatedSynonym>
@@ -16948,6 +17302,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36932">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of oxygen with relative atomic mass 15.003065. The longest-lived oxygen radionuclide with half-life of 122.2 s.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13982-43-9</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:316575</oboInOwl:hasDbXref>
@@ -17025,6 +17391,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36933">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:13982-18-8</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>oxygen-19</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17087,6 +17465,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36934">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of nitrogen with relative atomic mass 15.000109. The least abundant (0.368 atom percent) isotope of naturally occurring nitrogen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14390-96-6</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nitrogen-15</oboInOwl:hasExactSynonym>
@@ -17157,6 +17547,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36935">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of nitrogen with relative atomic mass 13.0057386. The longest-lived nitrogen radionuclide with half-life of 9.965 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13981-22-1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nitrogen-13</oboInOwl:hasExactSynonym>
@@ -17227,6 +17629,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36936">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:13981-62-9</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nitrogen-16</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17296,6 +17710,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36937">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>cas:14914-35-3</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nitrogen-17</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17358,6 +17784,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36938">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of nitrogen with relative atomic mass 14.003074. The most abundant (99.63 atom percent) isotope of naturally occurring nitrogen.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>nitrogen-14</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17414,6 +17852,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36939">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of fluorine with relative atomic mass 18.000938. The longest-lived fluorine radionuclide with half-life of 109.77 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13981-56-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>drugbank:DB13134</oboInOwl:hasDbXref>
@@ -17498,6 +17948,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36940">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of fluorine with relative atomic mass 18.998403 and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>fluorine-19</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17554,6 +18016,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30217"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of helium with relative atomic mass 6.01889 and half-life of 806.7 ms.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>helium-6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17610,6 +18084,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30217"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of helium with relative atomic mass 8.03392 and half-life of 119.0 ms.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>helium-8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -17666,6 +18152,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37340">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 209.98286 and half-life of 138.376 days; the only naturally occurring isotope of polonium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13981-52-7</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:76756</oboInOwl:hasDbXref>
@@ -17743,6 +18241,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37341">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">211</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 210.986637 and half-life of 0.516 s.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15735-83-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41683</oboInOwl:hasDbXref>
@@ -17820,6 +18330,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">212</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 211.988852 and half-life of 0.299 μs.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15389-34-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41677</oboInOwl:hasDbXref>
@@ -17897,6 +18419,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37343">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">213</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 212.9928425 and half-life of 4.2 μs.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15756-57-7</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polonium-213</oboInOwl:hasExactSynonym>
@@ -17967,6 +18501,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37344">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">214</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 213.995186 and half-life of 164.3 μs.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15735-67-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41679</oboInOwl:hasDbXref>
@@ -18044,6 +18590,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37345">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">215</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 214.999415 and half-life of 1.781 ms.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15706-52-2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41680</oboInOwl:hasDbXref>
@@ -18121,6 +18679,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37346">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">216</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 216.001905 and half-life of 0.145 s.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15756-58-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41684</oboInOwl:hasDbXref>
@@ -18198,6 +18768,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">133</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">217</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 217.006253 and half-life of &lt; 10 s.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>polonium-217</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -18254,6 +18836,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37348">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">218</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 218.008966 and half-life of 3.10 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15422-74-9</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:41685</oboInOwl:hasDbXref>
@@ -18331,6 +18925,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37350">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-190</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(190)84Po</oboInOwl:hasRelatedSynonym>
@@ -18386,6 +18992,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37351">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">107</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-191</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(191)84Po</oboInOwl:hasRelatedSynonym>
@@ -18441,6 +19059,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37352">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-192</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(192)84Po</oboInOwl:hasRelatedSynonym>
@@ -18496,6 +19126,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-193</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(193)84Po</oboInOwl:hasRelatedSynonym>
@@ -18551,6 +19193,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37354">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">194</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-194</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(194)84Po</oboInOwl:hasRelatedSynonym>
@@ -18606,6 +19260,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37355">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-195</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(195)84Po</oboInOwl:hasRelatedSynonym>
@@ -18661,6 +19327,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37356">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">196</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-196</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(196)84Po</oboInOwl:hasRelatedSynonym>
@@ -18716,6 +19394,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37357">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-197</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(197)84Po</oboInOwl:hasRelatedSynonym>
@@ -18771,6 +19461,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37358">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">198</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-198</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(198)84Po</oboInOwl:hasRelatedSynonym>
@@ -18826,6 +19528,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37359">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-199</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(199)84Po</oboInOwl:hasRelatedSynonym>
@@ -18881,6 +19595,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37360">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-200</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(200)84Po</oboInOwl:hasRelatedSynonym>
@@ -18936,6 +19662,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37361">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-201</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(201)84Po</oboInOwl:hasRelatedSynonym>
@@ -18991,6 +19729,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37362">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-202</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(202)84Po</oboInOwl:hasRelatedSynonym>
@@ -19046,6 +19796,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37363">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 202.981413 and half-life of 36.7 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:16729-74-1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polonium-203</oboInOwl:hasExactSynonym>
@@ -19116,6 +19878,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37364">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">204</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>polonium-204</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(204)84Po</oboInOwl:hasRelatedSynonym>
@@ -19171,6 +19945,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37365">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 204.981165 and half-life of 1.66 h.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:16729-76-3</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polonium-205</oboInOwl:hasExactSynonym>
@@ -19241,6 +20027,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37366">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 205.98047 and half-life of 8.8 days.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>polonium-206</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -19297,6 +20095,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37367">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 206.981578 and half-life of 5.80 h.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15720-45-3</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polonium-207</oboInOwl:hasExactSynonym>
@@ -19367,6 +20177,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37368">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">208</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 207.98123 and half-life of 2.898 years.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>polonium-208</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -19423,6 +20245,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37369">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">209</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of polonium with relative atomic mass 208.982404 and half-life of 102 years.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>polonium-209</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -19479,6 +20313,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37802">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of thallium with relative atomic mass 202.9723. The least abundant (29.524 atom percent) isotope of naturally occurring thallium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14280-48-9</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>thallium-203</oboInOwl:hasExactSynonym>
@@ -19543,6 +20389,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37803">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of thallium with relative atomic mass 204.9744. The most abundant (70.476 atom percent) isotope of naturally occurring thallium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14280-49-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:557319</oboInOwl:hasDbXref>
@@ -19614,6 +20472,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37804">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of thallium with relative atomic mass 200.9708 and half-life of 72.912 hours.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15064-65-0</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>thallium-201</oboInOwl:hasExactSynonym>
@@ -19678,6 +20548,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37805">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of thallium with relative atomic mass 198.9698 and half-life of 7.42 hours.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15064-66-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>gmelin:1491863</oboInOwl:hasDbXref>
@@ -19749,6 +20631,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37968">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28984"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of aluminium with relative atomic mass 26.98153 and nuclear spin &lt;small&gt;&lt;sup&gt;5&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>aluminium-27</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -19819,6 +20713,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37969">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28984"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of aluminium with relative atomic mass 25.986892 and half-life of 717,000 years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14682-66-7</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>aluminium-26</oboInOwl:hasExactSynonym>
@@ -19896,6 +20802,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37970">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28984"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of aluminium with relative atomic mass 27.981910 and half-life of 2.25 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14999-04-3</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>aluminium-28</oboInOwl:hasExactSynonym>
@@ -19973,6 +20891,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37971">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of phosphorus with relative atomic mass 30.973762 and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>phosphorus-31</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -20029,6 +20959,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37972">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of phosphorus with relative atomic mass 31.973907 and half-life of 14.26 days.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14596-37-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>kegg.compound:C19162</oboInOwl:hasDbXref>
@@ -20113,6 +21055,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37973">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of phosphorus with relative atomic mass 32.971725, half-life of 25.34 days and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15749-66-3</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>phosphorus-33</oboInOwl:hasExactSynonym>
@@ -20183,6 +21137,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37974">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of silicon with relative atomic mass 28.9764947, 4.683 atom percent natural abundancy, and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>silicon-29</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -20239,6 +21205,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37975">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of silicon with relative atomic mass 27.9769265. The most abundant (92.23 atom percent) isotope of naturally occurring silicon.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>silicon-28</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -20295,6 +21273,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37976">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of silicon with relative atomic mass 29.9737702. The least abundant (3.09 atom percent) isotope of naturally occurring silicon.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>silicon-30</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -20351,6 +21341,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37977">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of silicon with relative atomic mass 30.975363, half-life of 2.62 hours and nuclear spin &lt;small&gt;&lt;sup&gt;3&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14276-49-4</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>silicon-31</oboInOwl:hasExactSynonym>
@@ -20421,6 +21423,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37978">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of silicon with relative atomic mass 31.974148. The longest-lived silicon radionuclide with half-life of 172 years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15092-72-5</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>silicon-32</oboInOwl:hasExactSynonym>
@@ -20491,6 +21505,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37979">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of sulfur with relative atomic mass 31.972071. The most abundant (95.02 atom percent) isotope of naturally occurring sulfur.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13981-57-2</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-32</oboInOwl:hasExactSynonym>
@@ -20568,6 +21594,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37980">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of sulfur with relative atomic mass 32.9714585, 0.75 atom percent natural abundance, and nuclear spin &lt;small&gt;&lt;sup&gt;3&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14257-58-0</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-33</oboInOwl:hasExactSynonym>
@@ -20645,6 +21683,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37981">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of sulfur with relative atomic mass 33.9678668 and 4.21 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13965-97-4</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-34</oboInOwl:hasExactSynonym>
@@ -20722,6 +21772,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37982">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of sulfur with relative atomic mass 35.9670809. The least abundant (0.02 atom percent) isotope of naturally occurring sulfur.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14682-80-5</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-36</oboInOwl:hasExactSynonym>
@@ -20799,6 +21861,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37983">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of sulfur with relative atomic mass 34.9690322 and nuclear spin &lt;small&gt;&lt;sup&gt;3&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;. The longest-lived sulfur radionuclide with half-life of 87.5 days.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15117-53-0</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-35</oboInOwl:hasExactSynonym>
@@ -20876,6 +21950,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37984">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of sulfur with relative atomic mass 36.9711257 and  half-life of 5.05 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15753-06-7</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-37</oboInOwl:hasExactSynonym>
@@ -20953,6 +22039,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37985">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The radioactive isotope of sulfur with relative atomic mass 37.97116 and half-life of 170.3 min.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:15759-21-4</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sulfur-38</oboInOwl:hasExactSynonym>
@@ -21892,6 +22990,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A synthetic radioactive isotope of chromium having a half-life of 27.7 days and decaying by electron capture with emission of γ rays (0.32 MeV); it is used to label red blood cells for measurement of mass or volume, survival time, and sequestration studies, for the diagnosis of gastrointestinal bleeding, and to label platelets to study their survival.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:14392-02-0</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>chromium-51</oboInOwl:hasExactSynonym>
@@ -21963,6 +23073,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52230">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 118.903311, 8.59 atom percent natural abundance and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-119</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22019,6 +23141,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 119.902199 and 32.58 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-120</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22075,6 +23209,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 117.901609 and 24.22 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-118</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22131,6 +23277,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 115.901747 and 14.54 atom percent natural abundance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-116</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22187,6 +23345,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 116.902956, 7.68 atom percent natural abundance and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-117</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22243,6 +23413,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tin with relative atomic mass 114.903348, 0.34 atom percent natural abundance and nuclear spin &lt;small&gt;&lt;sup&gt;1&lt;/small&gt;&lt;/sup&gt;/&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tin-115</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22299,6 +23481,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52451">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of boron with relative atomic mass 11.009306, 80.1 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>boron-11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22349,6 +23543,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of tellurium with relative atomic mass 124.904425, 71.4 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tellurium-125</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22405,6 +23611,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52453">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49957"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of xenon with relative atomic mass 128.904780, 26.4 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>xenon-129</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22461,6 +23679,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52457">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of selenium with relative atomic mass 76.919915, 7.60 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>chemspider:9507361</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:16158304</oboInOwl:hasDbXref>
@@ -22602,6 +23832,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30145"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of lithium with relative atomic mass 7.016004, 92.5 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>lithium-7</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22658,6 +23900,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52459">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of rubidium with relative atomic mass 86.909184, 27.9 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>rubidium-87</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22714,6 +23968,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52460">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33344"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of niobium with relative atomic mass 92.906378, 100 atom percent natural abundance and nuclear spin 9/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>niobium-93</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22770,6 +24036,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52462">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27998"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">183</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of niobium with relative atomic mass 182.950225, 14.3 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tungsten-183</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22820,6 +24098,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52619">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of cadmium with relative atomic mass 110.904182, 12.8 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>cadmium-111</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22870,6 +24160,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The isotope of cadmium with relative atomic mass 112.904401, 12.2 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>cadmium-113</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22920,6 +24222,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52621">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30145"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of lithium with relative atomic mass 6.015122, 7.5 atom percent natural abundance and nuclear spin 1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>lithium-6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -22976,6 +24290,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33331"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of yttrium with relative atomic mass 88.905848, 100 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>yttrium-89</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23032,6 +24358,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52623">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of iron with relative atomic mass 56.935399, 2.1 atom percent natural abundance and nuclear spin 1/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>iron-57</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23082,6 +24420,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of antimony with relative atomic mass 120.903818, 57.2 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>antimony-121</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23138,6 +24488,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52626">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of antimony with relative atomic mass 122.904216, 42.8 atom percent natural abundance and nuclear spin 7/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>antimony-123</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23194,6 +24556,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52627">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33336"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of lanthanum with relative atomic mass 138.906348, 99.9 atom percent natural abundance and nuclear spin 7/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>lanthanum-139</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23250,6 +24624,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52631">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of iodine with relative atomic mass 126.904468, 100 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>iodine-127</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23306,6 +24692,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of potassium with relative atomic mass 38.963707, 93.3 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>potassium-39</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23362,6 +24760,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52633">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28685"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of molybdenum with relative atomic mass 94.905842, 15.9 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>molybdenum-95</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23412,6 +24822,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52634">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of sodium with relative atomic mass 22.989770, 100 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>sodium-23</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23468,6 +24890,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52635">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33330"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of scandium with relative atomic mass 44.955910, 100 atom percent natural abundance and nuclear spin 7/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>scandium-45</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23524,6 +24958,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52636">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The isotope of iodine with relative atomic mass 128.904988, and nuclear spin 7/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>iodine-129</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23580,6 +25026,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52637">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32999"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of europium with relative atomic mass 150.919846, 47.8 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>europium-151</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23636,6 +25094,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52743">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of bromine with relative atomic mass 78.918338, 50.69 atom percent natural abundance and nuclear spin 3/2.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(79)35Br</oboInOwl:hasRelatedSynonym>
@@ -23677,6 +25147,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52758">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30441"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of germanium with relative atomic mass 72.923459, 7.73 atom percent natural abundance and nuclear spin 9/2.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(73)32Ge</oboInOwl:hasRelatedSynonym>
@@ -23718,6 +25200,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52763">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25107"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The stable isotope of magnesium with relative atomic mass 24.985837, 10.0 atom percent natural abundance and nuclear spin 5/2.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>(25)12Mg</oboInOwl:hasRelatedSynonym>
@@ -23786,6 +25280,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable isotope of boron with relative atomic mass 10.0129370, 19.9 atom percent natural abundance and nuclear spin 3+.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>boron-10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -23829,6 +25335,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82623">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A zinc atom in which the nucleus contains 35 neutrons. It has a half-life of 244 days, decaying by emission of a positron (β&lt;small&gt;&lt;sup&gt;+&lt;/small&gt;&lt;/sup&gt; decay), and is the most abundant and stable of the 25 known radioisotopes of zinc.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>cas:13982-39-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>pubmed:11431342</oboInOwl:hasDbXref>
@@ -24011,6 +25529,63 @@
         <owl:annotatedTarget>metal allergens</owl:annotatedTarget>
         <oboInOwl:hasDbXref>chebi</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29236  -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29236 ">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29237  -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29237 ">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29238  -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29238 ">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/neutron_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://chemkg.github.io/chemrof/nucleon_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
