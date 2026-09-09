@@ -217,6 +217,14 @@
     
 
 
+    <!-- https://w3id.org/chemrof/isobar_of -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/chemrof/isobar_of">
+        <rdfs:label>isobar of</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/chemrof/neutron_number -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/chemrof/neutron_number">
