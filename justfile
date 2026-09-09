@@ -9,7 +9,7 @@ download-chebi:
     fi
 
 extract: download-chebi
-    if [ ! -f src/chebi.owl ]; then \
+    if [ ! -f src/chebi-atoms.ofn ]; then \
         ROBOT_JAVA_ARGS="-Djdk.xml.maxGeneralEntitySizeLimit=10000000 -Djdk.xml.totalEntitySizeLimit=10000000" robot extract \
           --input src/chebi.owl \
           --method MIREOT \
@@ -23,9 +23,9 @@ convert: extract
       --prefix "ChEMROF: https://chemkg.github.io/chemrof/" \
       --template src/properties.tsv \
       --template src/elements.tsv \
-      --output src/elements.ofn
+      --output src/tmp.ofn
     robot merge \
       --input src/metadata.ofn \
-      --input src/elements.ofn \
+      --input src/tmp.ofn \
       --input src/chebi-atoms.ofn \
       --output chebi-atomic-numbers.owl
