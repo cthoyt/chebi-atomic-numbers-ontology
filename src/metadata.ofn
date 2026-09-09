@@ -5,48 +5,56 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(orcid:=<https://orcid.org/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(CHEBI:=<http://purl.obolibrary.org/obo/CHEBI_>)
+Prefix(NCBITaxon:=<http://purl.obolibrary.org/obo/NCBITaxon_>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(spdx:=<https://spdx.org/licenses/>)
+Prefix(doap:=<http://usefulinc.com/ns/doap#>)
+Prefix(ChEMROF:=<https://w3id.org/chemrof/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<https://github.com/cthoyt/chebi-atomic-numbers-ontology/raw/refs/heads/main/chebi-atomic-numbers.owl>
-Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/CHEBI_33250>)
-Annotation(dcterms:creator <https://orcid.org/0000-0003-4423-4370>)
+Annotation(IAO:0000700 CHEBI:33250)
+Annotation(dcterms:creator orcid:0000-0003-4423-4370)
 Annotation(dcterms:description "An ontology that does axiom injection to ChEBI terms representing atoms by adding a data property to their atomic number.")
 Annotation(dcterms:license <https://spdx.org/licenses/CC0-1.0>)
 Annotation(dcterms:title "ChEBI Atomic Numbers Ontology")
-Annotation(<http://usefulinc.com/ns/doap#Repository> "https://github.com/cthoyt/chebi-atomic-numbers-ontology"^^xsd:anyURI)
+Annotation(doap:Repository "https://github.com/cthoyt/chebi-atomic-numbers-ontology"^^xsd:anyURI)
 
-Declaration(Class(<http://purl.obolibrary.org/NCBITaxon_9606>))
-Declaration(Class(<https://spdx.org/licenses/CC0-1.0>))
-Declaration(NamedIndividual(<https://orcid.org/0000-0003-4423-4370>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
+Declaration(Class(NCBITaxon:9606))
+Declaration(Class(spdx:CC0-1.0))
+Declaration(NamedIndividual(orcid:0000-0003-4423-4370))
+Declaration(AnnotationProperty(IAO:0000700))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#Repository>))
+Declaration(AnnotationProperty(doap:Repository))
+
+
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000700> (has ontology root term)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000700> "has ontology root term")
-
+AnnotationAssertion(rdfs:label IAO:0000700 "has ontology root term")
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/NCBITaxon_9606> (human)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (human)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/NCBITaxon_9606> "human")
+AnnotationAssertion(rdfs:label NCBITaxon:9606 "human")
 
 # Class: <https://spdx.org/licenses/CC0-1.0> (CC0 1.0)
 
-AnnotationAssertion(rdfs:label <https://spdx.org/licenses/CC0-1.0> "CC0 1.0")
+AnnotationAssertion(rdfs:label spdx:CC0-1.0 "CC0 1.0")
 
 
 ############################
@@ -55,8 +63,8 @@ AnnotationAssertion(rdfs:label <https://spdx.org/licenses/CC0-1.0> "CC0 1.0")
 
 # Individual: <https://orcid.org/0000-0003-4423-4370> (Charles Tapley Hoyt)
 
-AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-4423-4370> "Charles Tapley Hoyt")
-ClassAssertion(<http://purl.obolibrary.org/NCBITaxon_9606> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(rdfs:label orcid:0000-0003-4423-4370 "Charles Tapley Hoyt")
+ClassAssertion(NCBITaxon:9606 orcid:0000-0003-4423-4370)
 
 
 )

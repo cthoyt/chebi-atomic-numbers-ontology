@@ -11,6 +11,7 @@ download-chebi:
 extract: download-chebi
     if [ ! -f src/chebi-atoms.ofn ]; then \
         ROBOT_JAVA_ARGS="-Djdk.xml.maxGeneralEntitySizeLimit=10000000 -Djdk.xml.totalEntitySizeLimit=10000000" robot extract \
+          --prefixes src/prefixes.json \
           --input src/chebi.owl \
           --method MIREOT \
           --branch-from-term CHEBI:33250 \
@@ -19,13 +20,13 @@ extract: download-chebi
 
 convert: extract
     robot template \
-      --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" \
-      --prefix "ChEMROF: https://chemkg.github.io/chemrof/" \
+      --prefixes src/prefixes.json \
       --template src/properties.tsv \
       --template src/elements.tsv \
       --template src/isotopes.tsv \
       --output src/tmp.ofn
     robot merge \
+      --prefixes src/prefixes.json \
       --input src/metadata.ofn \
       --input src/tmp.ofn \
       --input src/chebi-atoms.ofn \
