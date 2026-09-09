@@ -87,6 +87,34 @@ SubClassOf(CHEBI:194539 DataHasValue(ChEMROF:atomic_number "117"^^xsd:integer))
 SubClassOf(CHEBI:194541 DataHasValue(ChEMROF:atomic_number "118"^^xsd:integer))
 ```
 
+## Isotopes
+
+While ChEBI has full coverage through element 117 in the atoms branch, it only
+has light coverage of isotopes. While some of them have been operationalized
+with the `isotopes.tsv` file, the following script can be used to generate
+additional rows:
+
+```python
+import pyobo
+import pandas as pd
+
+elements_df = pd.read_csv("elements.tsv", sep='\t', skiprows=2, header=None)
+rows = []
+for curie, _, label, number in elements_df.values:
+    for child in pyobo.get_descendants(curie) or []:
+        full_name = pyobo.get_name(child, strict=True)
+        name = full_name.removesuffix("atom").strip()
+        _, _, total = name.partition("-")
+        if total:
+            total = int(total)
+            rows.append((child.curie, "class", name, total, total - number))
+        else:
+            print(f"failed on {child.curie} - {full_name}")
+
+isotopes_df = pd.DataFrame(rows)
+isotopes_df.to_csv("nope.tsv", sep='\t', index=False)
+```
+
 ## License
 
 CC0
