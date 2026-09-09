@@ -1,16 +1,19 @@
 format:
     npx --yes prettier --check --prose-wrap always --write '**/*.md'
 
-download:
-    wget https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl -O src/chebi.owl
+download-chebi:
+    if [ ! -f src/chebi.owl ]; then \
+        wget \
+            https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl \
+            -O src/chebi.owl; \
+    fi
 
-extract:
-    export ROBOT_JAVA_ARGS="-Djdk.xml.maxGeneralEntitySizeLimit=10000000 -Djdk.xml.totalEntitySizeLimit=10000000"
-    robot extract \
+extract: download-chebi
+    ROBOT_JAVA_ARGS="-Djdk.xml.maxGeneralEntitySizeLimit=10000000 -Djdk.xml.totalEntitySizeLimit=10000000" robot extract \
       --input src/chebi.owl \
       --method MIREOT \
       --branch-from-term CHEBI:33250 \
-      --output chebi_33250.ofn -vvv
+      --output src/chebi_33250.ofn
 
 convert:
     robot template \
