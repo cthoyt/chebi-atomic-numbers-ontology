@@ -8,7 +8,6 @@ PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
 # CHEBI:37361 and CHEBI:37804 both ChEMROF:nucleon_number 201 .
 
 INSERT {
-    # ?x ChEMROF:isobar_of ?y .
     ?x rdfs:subClassOf [
         owl:onProperty ChEMROF:isobar_of;
         owl:someValuesFrom ?y
