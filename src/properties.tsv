@@ -4,3 +4,4 @@ ChEMROF:subatomic_particle_count	data property	subatomic particle		functional
 ChEMROF:atomic_number	data property	atomic number	ChEMROF:subatomic_particle_count	functional
 ChEMROF:neutron_number	data property	neutron number	ChEMROF:subatomic_particle_count	functional
 ChEMROF:nucleon_number	data property	nucleon number	ChEMROF:subatomic_particle_count	functional
+ChEMROF:isobar_of	data property	isobar of		symmetric
