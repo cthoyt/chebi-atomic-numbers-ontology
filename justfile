@@ -23,6 +23,7 @@ convert: extract
       --prefix "ChEMROF: https://chemkg.github.io/chemrof/" \
       --template src/properties.tsv \
       --template src/elements.tsv \
+      --template src/isotopes.tsv \
       --output src/tmp.ofn
     robot merge \
       --input src/metadata.ofn \
