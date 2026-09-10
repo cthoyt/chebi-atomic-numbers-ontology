@@ -87,7 +87,7 @@ SubClassOf(CHEBI:194539 DataHasValue(ChEMROF:atomic_number "117"^^xsd:integer))
 SubClassOf(CHEBI:194541 DataHasValue(ChEMROF:atomic_number "118"^^xsd:integer))
 ```
 
-## Isotopes
+## Isotopes, Isobars, and Isotones
 
 While ChEBI has full coverage through element 117 in the atoms branch, it only
 has light coverage of isotopes. While some of them have been operationalized
@@ -114,6 +114,9 @@ for curie, _, label, number in elements_df.values:
 isotopes_df = pd.DataFrame(rows)
 isotopes_df.to_csv("isotopes-extended.tsv", sep='\t', index=False)
 ```
+
+After, three relationships are materialized using `robot query --update` combine
+with SPARQL queries involving an `INSERT` clause.
 
 ## License
 

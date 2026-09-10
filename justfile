@@ -30,4 +30,9 @@ convert: extract
       --input src/metadata.ofn \
       --input src/tmp.ofn \
       --input src/chebi-atoms.ofn \
+      query \
+      --prefixes src/prefixes.json \
+      --update src/isobar-construct.ru \
+      --update src/isotone-construct.ru \
+      --update src/isotope-construct.ru \
       --output chebi-atomic-numbers.owl
