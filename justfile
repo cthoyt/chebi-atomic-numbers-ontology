@@ -34,4 +34,5 @@ convert: extract
       --prefixes src/prefixes.json \
       --update src/isobar-construct.ru \
       --update src/isotone-construct.ru \
+      --update src/isotope-construct.ru \
       --output chebi-atomic-numbers.owl
