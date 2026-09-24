@@ -14,7 +14,7 @@ WHERE {
     ?x rdfs:subClassOf [
         owl:onProperty ChEMROF:neutron_number;
         owl:hasValue ?n1
-    ], [
+    ] ; rdfs:subClassOf/rdfs:subClassOf [
         owl:onProperty ChEMROF:atomic_number;
         owl:hasValue ?z1
     ] .
@@ -22,10 +22,10 @@ WHERE {
     ?y rdfs:subClassOf [
         owl:onProperty ChEMROF:neutron_number;
         owl:hasValue ?n2
-    ], [
+    ] ; rdfs:subClassOf/rdfs:subClassOf [
         owl:onProperty ChEMROF:atomic_number;
         owl:hasValue ?z2
     ] .
-    FILTER(?x != ?y)
-    FILTER(?n1 - ?z1 = ?n2 - ?z2)
+    FILTER(?x != ?y) .
+    FILTER(?n1 - ?z1 = ?n2 - ?z2) .
 }
