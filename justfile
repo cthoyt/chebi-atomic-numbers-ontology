@@ -1,5 +1,6 @@
 format:
     npx --yes prettier --check --prose-wrap always --write '**/*.md'
+    uv run --script lint.py
 
 download-chebi:
     if [ ! -f src/chebi.owl ]; then \

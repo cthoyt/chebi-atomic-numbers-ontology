@@ -45,7 +45,7 @@ CHEBI:28685	class	molybdenum atom	42
 CHEBI:33353	class	technetium atom	43
 CHEBI:30682	class	ruthenium atom	44
 CHEBI:33359	class	rhodium atom	45
-CHEBI:33363	class	palladium	46
+CHEBI:33363	class	palladium atom	46
 CHEBI:30512	class	silver atom	47
 CHEBI:22977	class	cadmium atom	48
 CHEBI:30430	class	indium atom	49
@@ -57,7 +57,7 @@ CHEBI:49957	class	xenon atom	54
 CHEBI:30514	class	caesium atom	55
 CHEBI:32594	class	barium atom	56
 CHEBI:33336	class	lanthanum atom	57
-CHEBI:33369	class	cerium	58
+CHEBI:33369	class	cerium atom	58
 CHEBI:49828	class	praseodymium atom	59
 CHEBI:33372	class	neodymium atom	60
 CHEBI:33373	class	promethium atom	61
@@ -67,9 +67,9 @@ CHEBI:33375	class	gadolinium atom	64
 CHEBI:33376	class	terbium atom	65
 CHEBI:33377	class	dysprosium atom	66
 CHEBI:49648	class	holmium atom	67
-CHEBI:33379	class	erbium	68
+CHEBI:33379	class	erbium atom	68
 CHEBI:33380	class	thulium atom	69
-CHEBI:33381	class	ytterbium	70
+CHEBI:33381	class	ytterbium atom	70
 CHEBI:33382	class	lutetium atom	71
 CHEBI:33343	class	hafnium atom	72
 CHEBI:33348	class	tantalum atom	73
@@ -77,7 +77,7 @@ CHEBI:27998	class	tungsten	74
 CHEBI:49882	class	rhenium atom	75
 CHEBI:30687	class	osmium atom	76
 CHEBI:49666	class	iridium atom	77
-CHEBI:33364	class	platinum	78
+CHEBI:33364	class	platinum atom	78
 CHEBI:29287	class	gold atom	79
 CHEBI:25195	class	mercury atom	80
 CHEBI:30440	class	thallium atom	81
@@ -89,7 +89,7 @@ CHEBI:33314	class	radon atom	86
 CHEBI:33323	class	francium atom	87
 CHEBI:33325	class	radium atom	88
 CHEBI:33337	class	actinium atom	89
-CHEBI:33385	class	thorium	90
+CHEBI:33385	class	thorium atom	90
 CHEBI:33386	class	protactinium atom	91
 CHEBI:27214	class	uranium atom	92
 CHEBI:33387	class	neptunium atom	93
@@ -99,9 +99,9 @@ CHEBI:33390	class	curium atom	96
 CHEBI:33391	class	berkelium atom	97
 CHEBI:33392	class	californium atom	98
 CHEBI:33393	class	einsteinium atom	99
-CHEBI:33394	class	fermium	100
+CHEBI:33394	class	fermium atom	100
 CHEBI:33395	class	mendelevium atom	101
-CHEBI:33396	class	nobelium	102
+CHEBI:33396	class	nobelium atom	102
 CHEBI:33397	class	lawrencium atom	103
 CHEBI:33346	class	rutherfordium atom	104
 CHEBI:33349	class	dubnium atom	105
@@ -109,7 +109,7 @@ CHEBI:33351	class	seaborgium atom	106
 CHEBI:33355	class	bohrium atom	107
 CHEBI:33357	class	hassium atom	108
 CHEBI:33361	class	meitnerium atom	109
-CHEBI:33367	class	darmstadtium	110
+CHEBI:33367	class	darmstadtium atom	110
 CHEBI:33368	class	roentgenium atom	111
 CHEBI:33517	class	copernicium atom	112
 CHEBI:194533	class	nihonium atom	113
