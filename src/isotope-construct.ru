@@ -14,7 +14,7 @@ WHERE {
     ?atom rdfs:subClassOf [
         owl:onProperty ChEMROF:atomic_number;
         owl:hasValue ?atomic_number
-    ] ;
+    ] .
     ?x rdfs:subClassOf ?atom .
     ?y rdfs:subClassOf ?atom .
     FILTER(?x != ?y)
