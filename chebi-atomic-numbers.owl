@@ -261,6 +261,16 @@
     
 
 
+    <!-- https://w3id.org/chemrof/neutron_excess -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/chemrof/neutron_excess">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/chemrof/subatomic_particle_count"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>neutron excess</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/chemrof/neutron_number -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/chemrof/neutron_number">
@@ -353,6 +363,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
             </owl:Restriction>
@@ -391,6 +407,12 @@
         <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.96431</chemrof:monoisotopic_mass>
         <chemrof:smiles_string>[39Ar]</chemrof:smiles_string>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:16429279</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -475,12 +497,6 @@
         <owl:annotatedTarget>cas:25729-41-3</owl:annotatedTarget>
         <oboInOwl:source>cas</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_155827"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:16429279</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -488,6 +504,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176566">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22984"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -676,6 +698,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</owl:hasValue>
             </owl:Restriction>
@@ -841,6 +869,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
             </owl:Restriction>
@@ -999,6 +1033,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
             </owl:Restriction>
@@ -1039,6 +1079,36 @@
         <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84.91179</chemrof:monoisotopic_mass>
         <chemrof:smiles_string>[85Rb]</chemrof:smiles_string>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:19855587</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:25087142</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:32909800</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:33709729</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:34170158</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -1113,36 +1183,6 @@
         <owl:annotatedTarget>pubmed:18382518</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:19855587</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:25087142</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:32909800</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:33709729</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176572"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:34170158</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -1160,6 +1200,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52457"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1337,6 +1383,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</owl:hasValue>
             </owl:Restriction>
@@ -1496,6 +1548,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
             </owl:Restriction>
@@ -1630,6 +1688,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotone_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176575"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1829,6 +1893,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</owl:hasValue>
             </owl:Restriction>
@@ -1952,6 +2022,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_176584">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27563"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -3019,6 +3095,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</owl:hasValue>
             </owl:Restriction>
@@ -3214,6 +3296,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_196958"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7865,6 +7953,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
@@ -7961,6 +8055,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29238"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8102,6 +8202,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29237"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8528,6 +8634,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
             </owl:Restriction>
@@ -8644,6 +8756,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -14153,6 +14271,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</owl:hasValue>
             </owl:Restriction>
@@ -16376,6 +16500,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</owl:hasValue>
             </owl:Restriction>
@@ -16490,6 +16620,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</owl:hasValue>
             </owl:Restriction>
@@ -16585,6 +16721,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33492"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -17007,6 +17149,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
             </owl:Restriction>
@@ -17152,6 +17300,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
             </owl:Restriction>
@@ -17265,6 +17419,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -17400,6 +17560,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
             </owl:Restriction>
@@ -17530,6 +17696,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
             </owl:Restriction>
@@ -17650,6 +17822,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36931"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -17777,6 +17955,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
             </owl:Restriction>
@@ -17900,6 +18084,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
             </owl:Restriction>
@@ -18005,6 +18195,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -18128,6 +18324,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
             </owl:Restriction>
@@ -18240,6 +18442,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -18374,6 +18582,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
             </owl:Restriction>
@@ -18494,6 +18708,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -18621,6 +18841,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
             </owl:Restriction>
@@ -18737,6 +18963,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
             </owl:Restriction>
@@ -18825,6 +19057,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36940"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -18949,6 +19187,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
             </owl:Restriction>
@@ -19053,6 +19297,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
             </owl:Restriction>
@@ -19153,6 +19403,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19389,6 +19645,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19650,6 +19912,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</owl:hasValue>
             </owl:Restriction>
@@ -19903,6 +20171,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -20164,6 +20438,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</owl:hasValue>
             </owl:Restriction>
@@ -20410,6 +20690,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -20671,6 +20957,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</owl:hasValue>
             </owl:Restriction>
@@ -20924,6 +21216,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21191,6 +21489,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">133</owl:hasValue>
             </owl:Restriction>
@@ -21429,6 +21733,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21690,6 +22000,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</owl:hasValue>
             </owl:Restriction>
@@ -21925,6 +22241,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">107</owl:hasValue>
             </owl:Restriction>
@@ -22156,6 +22478,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -22401,6 +22729,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</owl:hasValue>
             </owl:Restriction>
@@ -22632,6 +22966,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -22871,6 +23211,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</owl:hasValue>
             </owl:Restriction>
@@ -23102,6 +23448,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23341,6 +23693,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</owl:hasValue>
             </owl:Restriction>
@@ -23572,6 +23930,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23817,6 +24181,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</owl:hasValue>
             </owl:Restriction>
@@ -24048,6 +24418,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -24293,6 +24669,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</owl:hasValue>
             </owl:Restriction>
@@ -24534,6 +24916,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
             </owl:Restriction>
@@ -24771,6 +25159,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -25031,6 +25425,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
             </owl:Restriction>
@@ -25268,6 +25668,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -25528,6 +25934,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</owl:hasValue>
             </owl:Restriction>
@@ -25760,6 +26172,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37369"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -26020,6 +26438,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</owl:hasValue>
             </owl:Restriction>
@@ -26256,6 +26680,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</owl:hasValue>
             </owl:Restriction>
@@ -26350,6 +26780,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37805"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -26456,6 +26892,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37805"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -26573,6 +27015,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
             </owl:Restriction>
@@ -26679,6 +27127,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</owl:hasValue>
             </owl:Restriction>
@@ -26780,6 +27234,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
             </owl:Restriction>
@@ -26876,6 +27336,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -26989,6 +27455,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37969"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -27112,6 +27584,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
             </owl:Restriction>
@@ -27212,6 +27690,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -27342,6 +27826,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
             </owl:Restriction>
@@ -27454,6 +27944,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
             </owl:Restriction>
@@ -27558,6 +28054,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</owl:hasValue>
             </owl:Restriction>
@@ -27658,6 +28160,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37978"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -27768,6 +28276,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37978"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -27898,6 +28412,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37977"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -28040,6 +28560,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37985"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -28187,6 +28713,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
             </owl:Restriction>
@@ -28324,6 +28856,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
             </owl:Restriction>
@@ -28455,6 +28993,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
             </owl:Restriction>
@@ -28576,6 +29120,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37985"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -28711,6 +29261,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
             </owl:Restriction>
@@ -28832,6 +29388,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37984"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -29787,6 +30349,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28073"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</owl:hasValue>
             </owl:Restriction>
@@ -29900,6 +30468,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</owl:hasValue>
             </owl:Restriction>
@@ -30004,6 +30578,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</owl:hasValue>
             </owl:Restriction>
@@ -30098,6 +30678,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -30200,6 +30786,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</owl:hasValue>
             </owl:Restriction>
@@ -30294,6 +30886,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -30402,6 +31000,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
             </owl:Restriction>
@@ -30500,6 +31104,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
             </owl:Restriction>
@@ -30560,6 +31170,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -30636,6 +31252,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</owl:hasValue>
             </owl:Restriction>
@@ -30706,6 +31328,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176573"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -30881,6 +31509,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
             </owl:Restriction>
@@ -30967,6 +31601,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
             </owl:Restriction>
@@ -31033,6 +31673,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52460">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33344"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -31109,6 +31755,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</owl:hasValue>
             </owl:Restriction>
@@ -31173,6 +31825,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -31251,6 +31909,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</owl:hasValue>
             </owl:Restriction>
@@ -31321,6 +31985,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52458"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -31405,6 +32075,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</owl:hasValue>
             </owl:Restriction>
@@ -31471,6 +32147,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52623">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -31543,6 +32225,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52626"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -31621,6 +32309,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</owl:hasValue>
             </owl:Restriction>
@@ -31695,6 +32389,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</owl:hasValue>
             </owl:Restriction>
@@ -31765,6 +32465,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52636"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -31849,6 +32555,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
             </owl:Restriction>
@@ -31923,6 +32635,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</owl:hasValue>
             </owl:Restriction>
@@ -31983,6 +32701,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52634">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -32051,6 +32775,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52635">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33330"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -32133,6 +32863,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</owl:hasValue>
             </owl:Restriction>
@@ -32199,6 +32935,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52637">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32999"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -32269,6 +33011,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</owl:hasValue>
             </owl:Restriction>
@@ -32320,6 +33068,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52758">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30441"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
@@ -32377,6 +33131,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotone_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37969"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -32479,6 +33239,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_number"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
             </owl:Restriction>
@@ -32536,6 +33302,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/chemrof/isotope_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176574"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/chemrof/neutron_excess"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
