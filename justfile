@@ -36,4 +36,5 @@ convert: extract
       --update src/isobar-construct.ru \
       --update src/isotone-construct.ru \
       --update src/isotope-construct.ru \
+      --update src/isodiapher-construct.ru \
       --output chebi-atomic-numbers.owl

@@ -9,3 +9,4 @@ ChEMROF:alternate_form_of	object property	alternate form of
 ChEMROF:isobar_of	object property	isobar of	ChEMROF:alternate_form_of	symmetric
 ChEMROF:isotone_of	object property	isotone of	ChEMROF:alternate_form_of	symmetric
 ChEMROF:isotope_of	object property	isotope of	ChEMROF:alternate_form_of	symmetric
+ChEMROF:isodiapher_of	object property	isodiapher of	ChEMROF:alternate_form_of	symmetric
