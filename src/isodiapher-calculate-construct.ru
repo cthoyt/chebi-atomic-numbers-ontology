@@ -4,6 +4,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ChEMROF: <https://w3id.org/chemrof/>
 PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
 
+# This SPARQL query is included for posterity, since in
+# https://github.com/cthoyt/chebi-atomic-numbers-ontology/pull/7,
+# neutron excess got explicitly encoded as a data property
+
 INSERT {
     ?x rdfs:subClassOf [
         owl:onProperty ChEMROF:isodiapher_of;
