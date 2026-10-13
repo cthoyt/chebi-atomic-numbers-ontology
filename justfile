@@ -36,4 +36,5 @@ convert: extract
       --update src/isobar-construct.rq \
       --update src/isotone-construct.rq \
       --update src/isotope-construct.rq \
+      --update src/isodiapher-construct.rq \
       --output chebi-atomic-numbers.owl
