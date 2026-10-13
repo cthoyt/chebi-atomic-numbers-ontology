@@ -33,8 +33,8 @@ convert: extract
       --input src/chebi-atoms.ofn \
       query \
       --prefixes src/prefixes.json \
-      --update src/isobar-construct.ru \
-      --update src/isotone-construct.ru \
-      --update src/isotope-construct.ru \
-      --update src/isodiapher-construct.ru \
+      --update src/isobar-construct.rq \
+      --update src/isotone-construct.rq \
+      --update src/isotope-construct.rq \
+      --update src/isodiapher-construct.rq \
       --output chebi-atomic-numbers.owl
